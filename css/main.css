@@ -1,0 +1,68 @@
+@charset "utf-8";
+#container {
+  width: 800px;
+  height: 200px;
+  margin: 20px auto;
+  background-color: bisque;
+}
+.origin {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+  margin: 40px;
+}
+.origin > div {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+}
+
+/* transform:scale=크기, translate=이동 */
+
+.movex:hover {
+  /* transform: translateX(50px); */
+  transform: scaleX(2);
+  background-color: rgb(19, 158, 158);
+}
+.movey:hover {
+  /* transform: translatey(50px); */
+  transform: scaleY(0.5);
+  background-color: rgb(255, 205, 96);
+}
+.movexy:hover {
+  /* transform: translate(50px,20px); */
+  transform: scale(3, 0.5);
+  background-color: olivedrab;
+}
+
+/* 회전 */
+#container2 {
+  width: 800px;
+  margin: 20px auto;
+}
+.origin2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  float: left;
+  margin: 40px;
+}
+#rotate1:hover {
+  rotate: 40deg; /*시계방향*/
+  transform: rotatex(50deg);
+  transition: 0.8s;
+}
+
+#rotate2:hover {
+  rotate: -40deg; /*반시계방향*/
+  transition: 0.8s;
+}
+
+/* perspective 사다리꼴 원근감 */
+#rotate3:hover {
+  transform: rotatex(40deg);
+}
+#per {
+  perspective: 100px;
+}
